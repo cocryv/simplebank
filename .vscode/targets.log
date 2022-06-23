@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jun 22 22:26:52 2022
+# Make data base, printed on Thu Jun 23 23:07:58 2022
 
 # Variables
 
@@ -23,7 +23,7 @@ USERPROFILE = C:\Users\Valentin
 # environment
 LOCALAPPDATA = C:\Users\Valentin\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-24f707c2-5a08-4334-8a43-9b1dad7da270-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-a8709be3-f5b0-4050-9ac8-c6bd81f863c2-sock
 # environment
 VSCODE_CWD = C:\Users\Valentin\projets\go\simple-bank
 # environment
@@ -41,7 +41,7 @@ GOPATH = C:\Users\Valentin\go
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_21920_PJHAAHBVVSNAWOMT
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_25548_LZZMOVXVSSYUCYQQ
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -99,7 +99,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 21920
+VSCODE_PID = 25548
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -134,8 +134,7 @@ MAKE = $(MAKE_COMMAND)
 PATH = C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\wamp64\bin\php\php8.0.13;C:\composer;C:\Program Files\nodejs\;C:\Program Files\Go\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\ProgramData\chocolatey\bin;C:\Users\Valentin\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Valentin\AppData\Local\Programs\Python\Python310\;C:\Users\Valentin\scoop\shims;C:\Users\Valentin\AppData\Local\Microsoft\WindowsApps;C:\Users\Valentin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Valentin\AppData\Local\GitHubDesktop\bin;C:\Users\Valentin\AppData\Roaming\Composer\vendor\bin;C:\Users\Valentin\AppData\Roaming\npm;C:\Users\Valentin\go\bin;C:\Program Files\Go\bin;C:\msys64\mingw64\bin;C:\Users\Valentin\go\bin;C:\Users\Valentin\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\Valentin\.ebcli-virtual-env\executables;C:\Program Files\PostgreSQL\14\bin;
 # environment
 COMPUTERNAME = DESKTOP-BUU0BLK
-#  
-default
+# default
 MAKEFILES := 
 # automatic
 ^F = $(notdir $^)
@@ -218,7 +217,8 @@ VSCODE_CLI = 1
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # default
-.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver 
+ output-sync load
 # environment
 MIC_LD_LIBRARY_PATH = C:\Program Files (x86)\Common Files\Intel\Shared Libraries\compiler\lib\mic
 # environment
@@ -234,9 +234,9 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD
 
 # Directories
 
-# . (key c:/Users/Valentin/projets/go/simple-bank, mtime 1655928734): 12 files, no impossibilities.
+# . (key c:/Users/Valentin/projets/go/simple-bank, mtime 1656015504): 14 files, no impossibilities.
 
-# 12 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -263,7 +263,7 @@ migratedown:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-19 22:51:46
+#  Last modified 2022-06-22 22:46:31
 #  File has been updated.
 #  Successfully updated.
 
@@ -273,8 +273,15 @@ dropdb:
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 11):
-	docker e 
-xec -it postgres14 dropdb simple_bank
+	docker exec -it postgres14 dropdb simple_bank
+
+server:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 28):
+	go run main.go
 
 migrateup:
 #  Phony target (prerequisite of .PHONY).
@@ -328,25 +335,25 @@ createdb:
 #  recipe to execute (from 'Makefile', line 8):
 	docker exec -it postgres14 createdb --username=root --owner=root simple_bank
 
-.PHONY: postgres createdb dropdb migrateup migratedown sqlc start
+.PHONY: postgres createdb dropdb migrateup migratedown sqlc start server
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=13/1024=1%, Rehash=0, Collisions=0/30=0%
+# Load=14/1024=1%, Rehash=0, Collisions=0/32=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 24 / storage = 164 B / avg = 6 B
-# current buf: size = 8174 B / used = 164 B / count = 24 / avg = 6 B
+# strcache buffers: 1 (0) / strings = 27 / storage = 187 B / avg = 6 B
+# current buf: size = 8174 B / used = 187 B / count = 27 / avg = 6 B
 
-# strcache performance: lookups = 44 / hit rate = 45%
+# strcache performance: lookups = 49 / hit rate = 44%
 # hash-table stats:
-# Load=24/8192=0%, Rehash=0, Collisions=0/44=0%
-# Finished Make data base on Wed Jun 22 22:26:52 2022
+# Load=27/8192=0%, Rehash=0, Collisions=0/49=0%
+# Finished Make data base on Thu Jun 23 23:07:58 2022
 
  
