@@ -16,6 +16,12 @@ migrateup:
 migratedown:
 	migrate -path db/migration -database "postgresql://root:root@localhost:5432/simple_bank?sslmode=disable" -verbose down
 
+migrateup1:
+	migrate -path db/migration -database "postgresql://root:root@localhost:5432/simple_bank?sslmode=disable" -verbose up 1
+
+migratedown1:
+	migrate -path db/migration -database "postgresql://root:root@localhost:5432/simple_bank?sslmode=disable" -verbose down 1
+
 makeFileDir := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 
 sqlc:
@@ -28,4 +34,4 @@ server:
 	go run main.go
 
 
-.PHONY: postgres createdb dropdb migrateup migratedown sqlc start server
+.PHONY: postgres createdb dropdb migrateup migrateup1 migratedown migratedown1 sqlc start server

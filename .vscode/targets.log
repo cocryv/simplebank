@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jun 23 23:07:58 2022
+# Make data base, printed on Sat Jun 25 12:42:18 2022
 
 # Variables
 
@@ -23,7 +23,7 @@ USERPROFILE = C:\Users\Valentin
 # environment
 LOCALAPPDATA = C:\Users\Valentin\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-a8709be3-f5b0-4050-9ac8-c6bd81f863c2-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-6b0f0819-a7a7-40a4-9885-7cb8a0290299-sock
 # environment
 VSCODE_CWD = C:\Users\Valentin\projets\go\simple-bank
 # environment
@@ -41,7 +41,7 @@ GOPATH = C:\Users\Valentin\go
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_25548_LZZMOVXVSSYUCYQQ
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_16816_XRARYELUJFXWUCZT
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -99,7 +99,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 25548
+VSCODE_PID = 16816
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -217,8 +217,7 @@ VSCODE_CLI = 1
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # default
-.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver 
- output-sync load
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
 # environment
 MIC_LD_LIBRARY_PATH = C:\Program Files (x86)\Common Files\Intel\Shared Libraries\compiler\lib\mic
 # environment
@@ -289,7 +288,8 @@ migrateup:
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 14):
-	migrate -path db/migration -database "postgresql://root:root@localhost:5432/simple_bank?sslmode=disable" -verbose up
+	migrate -path db/migration -database "postgresql://root:root 
+@localhost:5432/simple_bank?sslmode=disable" -verbose up
 
 # Not a target:
 .DEFAULT:
@@ -354,6 +354,6 @@ createdb:
 # strcache performance: lookups = 49 / hit rate = 44%
 # hash-table stats:
 # Load=27/8192=0%, Rehash=0, Collisions=0/49=0%
-# Finished Make data base on Thu Jun 23 23:07:58 2022
+# Finished Make data base on Sat Jun 25 12:42:18 2022
 
  
