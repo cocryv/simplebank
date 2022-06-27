@@ -18,6 +18,7 @@ services:
     depends_on:
       - postgres
     entrypoint: ["/app/wait-for.sh","postgres:5432","--","/app/start.sh"]
+    
     # ca veut dire que l'api se lancera quand le postgres sera pret
     command: ["/app/main"]
 
