@@ -8,10 +8,12 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jun 27 22:23:29 2022
+# Make data base, printed on Tue Jun 28 21:06:16 2022
 
 # Variables
 
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
 SYSTEMDRIVE = C:
 # environment
@@ -23,7 +25,7 @@ USERPROFILE = C:\Users\Valentin
 # environment
 LOCALAPPDATA = C:\Users\Valentin\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-36f518e9-11a1-41eb-ab60-ecdafb98537b-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-3af82ac9-6137-4adc-9352-7c501d87481c-sock
 # environment
 VSCODE_CWD = C:\Users\Valentin\projets\go\simple-bank
 # environment
@@ -41,7 +43,9 @@ GOPATH = C:\Users\Valentin\go
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_25132_WOSIZBLHETOJIJVA
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6424_TOOGXOZOSYHTROYV
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -99,7 +103,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 25132
+VSCODE_PID = 6424
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -131,7 +135,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\wamp64\bin\php\php8.0.13;C:\composer;C:\Program Files\nodejs\;C:\Program Files\Go\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\ProgramData\chocolatey\bin;C:\Users\Valentin\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Valentin\AppData\Local\Programs\Python\Python310\;C:\Users\Valentin\scoop\shims;C:\Users\Valentin\AppData\Local\Microsoft\WindowsApps;C:\Users\Valentin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Valentin\AppData\Local\GitHubDesktop\bin;C:\Users\Valentin\AppData\Roaming\Composer\vendor\bin;C:\Users\Valentin\AppData\Roaming\npm;C:\Users\Valentin\go\bin;C:\Program Files\Go\bin;C:\msys64\mingw64\bin;C:\Users\Valentin\go\bin;C:\Users\Valentin\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\Valentin\.ebcli-virtual-env\executables;C:\Program Files\PostgreSQL\14\bin;
+PATH = C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\wamp64\bin\php\php8.0.13;C:\composer;C:\Program Files\nodejs\;C:\Program Files\Go\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\Valentin\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Valentin\AppData\Local\Programs\Python\Python310\;C:\Users\Valentin\scoop\shims;C:\Users\Valentin\AppData\Local\Microsoft\WindowsApps;C:\Users\Valentin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Valentin\AppData\Local\GitHubDesktop\bin;C:\Users\Valentin\AppData\Roaming\Composer\vendor\bin;C:\Users\Valentin\AppData\Roaming\npm;C:\Users\Valentin\go\bin;C:\Program Files\Go\bin;C:\msys64\mingw64\bin;C:\Users\Valentin\go\bin;C:\Users\Valentin\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\Valentin\.ebcli-virtual-env\executables;C:\Program Files\PostgreSQL\14\bin;
 # environment
 COMPUTERNAME = DESKTOP-BUU0BLK
 # default
@@ -225,7 +229,7 @@ PROCESSOR_REVISION = 7100
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD
 # variable set hash-table stats:
-# Load=106/1024=10%, Rehash=0, Collisions=10/134=7%
+# Load=108/1024=11%, Rehash=0, Collisions=11/136=8%
 
 # Pattern-specific Variable Values
 
@@ -262,7 +266,7 @@ migratedown:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-26 18:34:40
+#  Last modified 2022-06-27 23:04:21
 #  File has been updated.
 #  Successfully updated.
 
@@ -296,14 +300,14 @@ migrateup:
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 14):
-	migrate -path db/migration -database "postgresql://root:root@localhost:5432/simple_bank?sslmode=disable" -verbose up
+	migrate -path db/migration -database "postgresql://root:root@localhost:5432/simple_bank?sslmod 
+e=disable" -verbose up
 
 # Not a target:
 .DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
-#  File has not been upd 
-ated.
+#  File has not been updated.
 
 # Not a target:
 all:
@@ -370,6 +374,6 @@ createdb:
 # strcache performance: lookups = 60 / hit rate = 43%
 # hash-table stats:
 # Load=34/8192=0%, Rehash=0, Collisions=0/60=0%
-# Finished Make data base on Mon Jun 27 22:23:29 2022
+# Finished Make data base on Tue Jun 28 21:06:16 2022
 
  
